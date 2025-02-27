@@ -9,7 +9,7 @@
 	"compatibility_date": "2025-06-28",
 	"observability": {
 		"enabled": true
-	}
+	},
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
@@ -27,7 +27,9 @@
 	 * Environment Variables
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
 	 */
-	// "vars": { "MY_VARIABLE": "production_value" },
+	"vars": {
+		"DATABASE_URL": "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiMDFKWVhSNlhWMllOVlJGVDc1RVJZWDlRNkYiLCJ0ZW5hbnRfaWQiOiJkNTcxNjgyZGE1YTNlZWFkMTFmZWNjYzU0MzAyZjkxMjRhYmZkNmYyYmI5MDg3Yjc0NGZkZGRhZDk0M2I1NzJlIiwiaW50ZXJuYWxfc2VjcmV0IjoiNmZiMGYzZDAtMTY1Ni00NzE4LThhN2UtNzhhMDNhOGJjM2FmIn0.m5qYuGJyV2i-21XbEwCubCvaHeWL-W7ydwBLe-3iZRM"
+	}
 	/**
 	 * Note: Use secrets to store sensitive data.
 	 * https://developers.cloudflare.com/workers/configuration/secrets/
